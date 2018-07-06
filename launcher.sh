@@ -2,7 +2,7 @@
 #launcher.sh
 
 cd /
-cd home/pratik/hearaid/
+cd home/pi/hearaid/
 python micpress.py
 cd /
 
