@@ -1,1 +1,58 @@
 # Rajasthan-Hackathon
+
+Rajasthan Hackathan 2018
+
+Installation Requirements:
+
+install pip3
+install selenium :
+
+sudo pip3 install selenium
+
+install BeautifulSoup:
+
+sudo pip3 install beautifulsoup4
+
+install requests:
+
+sudo pip3 install requests
+
+Firefox webdriver for selenium uses geckodriver. Make sure to install it on the Raspbian OS
+
+</hr>
+
+Instructions for lancher.sh
+1. Change it to executable file
+
+sudo chmod 755 launcher.sh
+
+2. Navigate back to your home directory
+
+cd 
+
+3. Create a logs directory
+
+cd logs
+
+4. Being inside the logs while you need to open the crontab
+
+sudo crontab -e
+
+5. Paste the following code inside the opened Window: 
+@reboot sh /home/pi/hearaid/launcher.sh >/home/pi/logs/cronlog 2>&1
+
+PS: check the locations of your directory accordingly!
+
+6. Reboot and Check
+
+sudo reboot
+
+7. If it fails, you will see the errors inside the cronlog file inside the logs folder
+
+cd logs
+cat cronlog
+
+
+8. You can add this line inside the crontab file where you added @reboot, this line tries to run the file every minute if it fails to execute on reboot, if it successfully does then it does nothing.
+
+*/1 * * * * pgrep -f pressmic.py || nohup python /home/pi/hearaid/pressmic.py > test.out
