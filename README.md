@@ -4,8 +4,7 @@ Rajasthan Hackathan 2018
 
 Installation Requirements:
 
-install pip3
-install selenium :
+install selenium using pip3 :
 
 sudo pip3 install selenium
 
