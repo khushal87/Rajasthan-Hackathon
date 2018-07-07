@@ -2,23 +2,6 @@
 
 Rajasthan Hackathan 2018
 
-Installation Requirements:
-
-install selenium using pip3 :
-
-sudo pip3 install selenium
-
-install BeautifulSoup:
-
-sudo pip3 install beautifulsoup4
-
-install requests:
-
-sudo pip3 install requests
-
-Firefox webdriver for selenium uses geckodriver. Make sure to install it on the Raspbian OS
-
-</hr>
 
 Instructions for lancher.sh
 1. Change it to executable file
