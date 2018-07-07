@@ -14,4 +14,3 @@ sudo pip3 install requests
 
 Firefox webdriver for selenium uses geckodriver. Make sure to install it on the Raspbian OS
 
-</hr>
